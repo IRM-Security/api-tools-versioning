@@ -15,6 +15,16 @@ use function var_export;
 
 class PrototypeRouteListenerTest extends TestCase
 {
+
+    /** @var array */
+    private $config;
+
+    /** @var ConfigListener */
+    private $configListener;
+
+    /** @var ModuleEvent */
+    private $event;
+
     public function setUp(): void
     {
         $this->config         = [
