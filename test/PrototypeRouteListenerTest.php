@@ -15,7 +15,6 @@ use function var_export;
 
 class PrototypeRouteListenerTest extends TestCase
 {
-
     /** @var array */
     private $config;
 
