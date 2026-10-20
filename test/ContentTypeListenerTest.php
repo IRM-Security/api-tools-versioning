@@ -16,6 +16,12 @@ class ContentTypeListenerTest extends TestCase
     use EventListenerIntrospectionTrait;
     use RouteMatchFactoryTrait;
 
+    /** @var MvcEvent */
+    private $event;
+
+    /** @var ContentTypeListener */
+    private $listener;
+
     public function setUp(): void
     {
         $this->event = new MvcEvent();
