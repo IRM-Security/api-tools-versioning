@@ -15,6 +15,12 @@ class ContentTypeListenerFactoryTest extends TestCase
 {
     use ProphecyTrait;
 
+    /** @var \Prophecy\Prophecy\ObjectProphecy<ContainerInterface> */
+    private $container;
+
+    /** @var array */
+    private $defaultRegexes;
+
     public function setUp(): void
     {
         $this->container = $this->prophesize(ContainerInterface::class);
